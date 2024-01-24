@@ -1,7 +1,14 @@
 import _ from "lodash";
-import "./style.css";
-import Cat from "./cat.jpg";
+// styles
+import "../styles/hello.css";
+import "../styles/goodbye.css";
+import "../styles/background.css";
+
+import Cat from "../assets/img/cat.jpg";
 import printMe from "./print.js";
+import print2 from "./print2.js";
+
+print2();
 
 function component() {
   const element = document.createElement("div");
