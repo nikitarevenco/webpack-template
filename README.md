@@ -13,3 +13,7 @@
 `npm run deploy`: Copies the contents of dist folder to the gh-pages branch
 
 `npm run start`: Starts the web server
+
+**Getting started:**
+
+`npm install webpack webpack-cli -save-dev`: Installs node_modules
