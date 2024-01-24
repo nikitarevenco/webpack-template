@@ -1,5 +1,12 @@
-# webpack-template
-Commands:
+# Webpack Template
+**Template currently supports:**
+- HTML
+- CSS
+- JavaScript
+- Images
+<br>
+
+**Commands:**
 
 `npm run build`: Runs the build itself creating the dist folder
 
