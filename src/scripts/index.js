@@ -3,6 +3,7 @@ import _ from "lodash";
 import "../styles/hello.css";
 import "../styles/goodbye.css";
 import "../styles/background.css";
+import "../styles/reset.css";
 
 import Cat from "../assets/img/cat.jpg";
 import printMe from "./print.js";
