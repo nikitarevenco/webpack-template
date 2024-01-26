@@ -1,11 +1,11 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const isProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
   mode: "development",
   entry: {
     index: "./src/scripts/index.js",
-    print: "./src/scripts/print.js",
   },
   devtool: "inline-source-map",
   devServer: {
@@ -13,7 +13,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Development",
       template: path.resolve(__dirname, "src", "template.html"),
     }),
   ],
@@ -21,12 +20,17 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    publicPath: isProduction ? "/repository-name/" : "/",
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.html$/,
+        use: ["html-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
