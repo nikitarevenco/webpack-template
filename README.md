@@ -10,11 +10,12 @@
 <br> <!-- Adjust the number of <br> tags to increase spacing -->
 
 ## Getting started 
-```shell
-$ npm install webpack webpack-cli --save-dev
 ```
-
-[Exporting](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export) | [Importing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+npm install webpack webpack-cli --save-dev
+```
+```
+npm init @eslint/config
+```
 
 <br>
 
